@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        body{
+            background: rgb(243, 230, 230);
+        }
+        .superman{
+            margin-top: 60px;
+            transition: transform ease-in 1s ;
+        }
+        .container{
+            height: 400px;
+            width: 100%;
+            background: rgb(243, 230, 230);
+        }
+        .container:hover .superman{
+            transform: rotate(-20deg);
+         transition: transform ease-in .2s;
+
+        }
+        .container:hover .light{
+            transform: translate(1800px,-100px);
+            
+          
+        }
+
+        .light{
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            background-color: rgb(150, 24, 24);
+            margin-left: 190px;
+            margin-top: -200px;
+           
+        transition: transform 1s ease-out .2s;
+        }
+      
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="superman" src="image/superman.png" alt="">
+        <div class="light"></div>
+    </div>
+    
+</body>
+</html>
